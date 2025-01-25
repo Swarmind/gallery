@@ -1,6 +1,6 @@
 ---
 - &tiger-gemma
-  url: github:Swarmind/models/tiger-gemma-9b-v1-i1.yaml@master
+  url: "github:Swarmind/models/tiger-gemma-9b-v1-i1.yaml@master"
   name: "tiger-gemma-9b-v1-i1"
   icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/A97OlLKeT4XOnv4IG1b6m.png
   urls:
@@ -17,7 +17,7 @@
       sha256: ef10accfee8023b31def5425bf591bf1f0203090f3dd851cd3f37bb235324383
       uri: huggingface://mradermacher/Tiger-Gemma-9B-v1-i1-GGUF/Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
 - &stablediffusion
-  url: github:Swarmind/models/stablediffusion.yaml@master
+  url: "github:Swarmind/models/stablediffusion.yaml@master"
   name: "stablediffusion.cpp"
   icon: https://avatars.githubusercontent.com/u/100950301
   description: |
@@ -27,5 +27,5 @@
     - https://github.com/EdVince/Stable-Diffusion-NCNN
     - https://github.com/EdVince/Stable-Diffusion-NCNN/blob/main/LICENSE
 - &text-embedding-ada-002
-  url: github:Swarmind/models/text-embedding-ada-002.yaml
+  url: "github:Swarmind/models/text-embedding-ada-002.yaml"
   name: "text-embedding-ada-002"
