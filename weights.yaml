@@ -1,6 +1,6 @@
 ---
 - &llama33
-  url: "github:mudler/LocalAI/gallery/llama3.1-instruct.yaml@master"
+  url: "github:Swarmind/gallery/models/llama3.1-instruct.yaml@master"
   name: "llama-3.3-70b-instruct-ablated"
   license: llama3.3
   tags:
