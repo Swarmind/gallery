@@ -3,6 +3,12 @@
   url: "github:Swarmind/gallery/models/tiger-gemma-9b-v1-i1.yaml@master"
   name: "tiger-gemma-9b-v1-i1"
   icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/A97OlLKeT4XOnv4IG1b6m.png
+  tags:
+    - llm
+    - gguf
+    - gpu
+    - gemma
+    - cpu
   urls:
     - https://huggingface.co/TheDrummer/Tiger-Gemma-9B-v1
     - https://huggingface.co/mradermacher/Tiger-Gemma-9B-v1-i1-GGUF
