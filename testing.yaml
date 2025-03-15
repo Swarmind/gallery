@@ -1,6 +1,6 @@
 ---
 - &llama33
-  url: "github:Swarmind/gallery/models/llama3.1-instruct.yaml@master"
+  url: "github:Swarmind/gallery/models/llama3-instruct.yaml@master"
   name: "llama-3.3-70b-instruct-ablated"
   license: llama3.3
   tags:
@@ -26,3 +26,20 @@
     - filename: Llama-3.3-70B-Instruct-ablated-Q4_K_M.gguf
       sha256: 090b2288810c5f6f680ff5cb4bc97665393d115c011fcd54dca6aec02e74a983
       uri: huggingface://bartowski/Llama-3.3-70B-Instruct-ablated-GGUF/Llama-3.3-70B-Instruct-ablated-Q4_K_M.gguf
+
+- &big-tiger-gemma
+  url: "github:Swarmind/gallery/models/gemma.yaml@master"
+  name: "big-tiger-gemma-27b-v1"
+  icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/A97OlLKeT4XOnv4IG1b6m.png
+  urls:
+    - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v1
+    - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v1-GGUF
+  description: |
+    Big Tiger Gemma 27B v1 is a Decensored Gemma 27B model with no refusals, except for some rare instances from the 9B model. It does not appear to have any brain damage. The model is available from various sources, including Hugging Face, and comes in different variations such as GGUF, iMatrix, and EXL2.
+  overrides:
+    parameters:
+      model: Big-Tiger-Gemma-27B-v1c-Q4_K_M.gguf
+  files:
+    - filename: Big-Tiger-Gemma-27B-v1c-Q4_K_M.gguf
+      sha256: c5fc5605d36ae280c1c908c9b4bcb12b28abbe2692f317edeb83ab1104657fe5
+      uri: huggingface://TheDrummer/Big-Tiger-Gemma-27B-v1-GGUF/Big-Tiger-Gemma-27B-v1c-Q4_K_M.gguf
