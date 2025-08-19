@@ -1,4 +1,4 @@
-context_size: 8192
+context_size: 16384
 f16: true
 mmap: true
 name: deepseek-r1-distill-qwen-14b
