@@ -1,20 +1,22 @@
----
-name: "deepseek"
-
-config_file: |
-  mmap: true
-  context_size: 8192
-  template:
-    chat_message: |-
-      {{if eq .RoleName "user" -}}User: {{.Content }}
-      {{ end -}}
-      {{if eq .RoleName "assistant" -}}Assistant: {{.Content}}<｜end▁of▁sentence｜>{{end}}
-      {{if eq .RoleName "system" -}}{{.Content}}
-      {{end -}}
-    chat: |
-      {{.Input -}}
-      Assistant: # Space is preserved for templating reasons, but line does not end with one for the linter.
-    completion: |
-      {{.Input}}
-  stopwords:
-  - '<｜end▁of▁sentence｜>'
+context_size: 8192
+f16: true
+mmap: true
+name: deepseek-r1-distill-qwen-14b
+parameters:
+  model: DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
+stopwords:
+- <｜begin▁of▁sentence｜>
+- <｜end▁of▁sentence｜>
+- <｜User｜>
+- <｜Assistant｜>
+template:
+  chat: |
+    {{.Input -}}<｜Assistant｜>
+  chat_message: |
+    {{if eq .RoleName "system" -}}{{.Content }}
+    {{ end -}}
+    {{if eq .RoleName "user" -}}<｜User｜>{{.Content}}
+    {{end -}}
+    {{if eq .RoleName "assistant" -}}<｜Assistant｜>{{.Content}}<｜end▁of▁sentence｜>{{end}}
+  completion: |
+    {{.Input}}
