@@ -1,6 +1,6 @@
 ---
 - &tiger-gemma
-  url: "github:Swarmind/gallery/models/gemma.yaml@master"
+  url: "github:Swarmind/gallery/models/gemma.yaml@modelcleanup"
   name: "tiger-gemma-9b-v1-i1"
   icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/A97OlLKeT4XOnv4IG1b6m.png
   tags:
@@ -27,7 +27,7 @@
       uri: huggingface://mradermacher/Tiger-Gemma-9B-v1-i1-GGUF/Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
 
 - &big-tiger-gemma
- url: "github:Swarmind/gallery/models/gemma.yaml@master"
+ url: "github:Swarmind/gallery/models/gemma.yaml@modelcleanup"
  name: "Big-Tiger-Gemma-27B-v3"
  license: other
  icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/M4jXHb6oIiY8KIL9lHmeA.png
@@ -48,7 +48,7 @@
       uri: huggingface://TheDrummer/Big-Tiger-Gemma-27B-v3-GGUF/Tiger-Gemma-27B-v3a-Q8_0.gguf
 
 - &wizard-vicuna-uncensored
-  url: "github:Swarmind/gallery/models/vicuna.yaml@master"
+  url: "github:Swarmind/gallery/models/vicuna.yaml@modelcleanup"
   name: "wizard-vicuna-13b-uncensored"
   license: other
   icon: https://github.com/nlpxucan/WizardLM/raw/main/imgs/WizardLM.png
@@ -70,7 +70,7 @@
 
 
 - &DeepSeek-R1-Distill-Qwen-14B
-  url: "github:Swarmind/gallery/models/deepseek.yaml@master"
+  url: "github:Swarmind/gallery/models/deepseek.yaml@modelcleanup"
   name: "DeepSeek-R1-Distill-Qwen-14B"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
@@ -91,7 +91,7 @@
       uri: huggingface://unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF/DeepSeek-R1-Distill-Qwen-14B-Q5_K_M.gguf
 
 - &DeepSeek-R1-Distill-Qwen-32B
-  url: "github:Swarmind/gallery/models/deepseek.yaml@master"
+  url: "github:Swarmind/gallery/models/deepseek.yaml@modelcleanup"
   name: "DeepSeek-R1-Distill-Qwen-32B"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
@@ -113,7 +113,7 @@
       uri: huggingface://bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/DeepSeek-R1-Distill-Qwen-32B-Q5_K_M.gguf
 
 - &FLUX.1-dev
-  url: "github:Swarmind/gallery/models/flux.1-dev.yaml@master"
+  url: "github:Swarmind/gallery/models/flux.1-dev.yaml@modelcleanup"
   name: "FLUX.1-dev"
   license: other
   icon: https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/dev_grid.jpg
@@ -134,7 +134,7 @@
 
 
 - &stable-diffusion-3.5-large
-  url: "github:Swarmind/gallery/models/stablediffusion.yaml@master"
+  url: "github:Swarmind/gallery/models/stablediffusion.yaml@modelcleanup"
   name: "stable-diffusion-3.5-large"
   license: other
   icon: https://huggingface.co/stabilityai/stable-diffusion-3.5-large/media/main/sd3.5_large_demo.png
