@@ -28,7 +28,7 @@
 
 - &big-tiger-gemma
   url: "github:Swarmind/gallery/models/gemma.yaml@master"
-  name: "Big-Tiger-Gemma-27B-v3"
+  name: "big-tiger-gemma-27b-v3"
   license: other
   icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/M4jXHb6oIiY8KIL9lHmeA.png
   tags:
@@ -72,7 +72,7 @@
 
 - &DeepSeek-R1-Distill-Qwen-14B
   url: "github:Swarmind/gallery/models/deepseek.yaml@master"
-  name: "DeepSeek-R1-Distill-Qwen-14B"
+  name: "deepseek-r1-distill-qwen-14b"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
   tags:
@@ -95,7 +95,7 @@
 
 - &DeepSeek-R1-Distill-Qwen-32B
   url: "github:Swarmind/gallery/models/deepseek.yaml@master"
-  name: "DeepSeek-R1-Distill-Qwen-32B"
+  name: "deepseek-r1-distill-qwen-32b"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
   tags:
@@ -118,7 +118,7 @@
 
 - &FLUX-1-dev
   url: "github:Swarmind/gallery/models/flux.1-dev.yaml@master"
-  name: "FLUX.1-dev"
+  name: "flux.1-dev"
   license: other
   icon: https://www.toolpilot.ai/cdn/shop/files/fluxdev.jpg?v=1745132053
   tags:
