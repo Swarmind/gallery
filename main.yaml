@@ -42,7 +42,7 @@
    - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v3-GGUF 
   overrides:
     parameters:
-      model: Tiger-Gemma-27B-v3a-Q8_0.gguf
+      model: TheDrummer_Big-Tiger-Gemma-27B-v3-Q4_K_M.gguf
   files:
    - filename: TheDrummer_Big-Tiger-Gemma-27B-v3-Q4_K_M.gguf
      sha256: 4afbd426fa2b3b2927edff46a909868ade5656e3ca7c1df609c524b2b2cbe8c5
