@@ -27,39 +27,40 @@
       uri: huggingface://mradermacher/Tiger-Gemma-9B-v1-i1-GGUF/Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
 
 - &big-tiger-gemma
- url: "github:Swarmind/gallery/models/gemma.yaml@master"
- name: "Big-Tiger-Gemma-27B-v3"
- license: other
- icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/M4jXHb6oIiY8KIL9lHmeA.png
- urls:
-  - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v3
-  - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v3-GGUF 
- tags:
-  - llm
-    - gguf
-    - gpu
-    - gemma
-    - cpu
- overrides:
+  url: "github:Swarmind/gallery/models/gemma.yaml@master"
+  name: "Big-Tiger-Gemma-27B-v3"
+  license: other
+  icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/M4jXHb6oIiY8KIL9lHmeA.png
+  tags:
+   - llm
+   - gguf
+   - gpu
+   - gemma
+   - cpu
+  urls:
+   - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v3
+   - https://huggingface.co/TheDrummer/Big-Tiger-Gemma-27B-v3-GGUF 
+  overrides:
     parameters:
       model: Tiger-Gemma-27B-v3a-Q8_0.gguf
-    files:
-    - filename: Tiger-Gemma-27B-v3a-Q8_0.gguf
-      uri: huggingface://TheDrummer/Big-Tiger-Gemma-27B-v3-GGUF/Tiger-Gemma-27B-v3a-Q8_0.gguf
+  files:
+   - filename: TheDrummer_Big-Tiger-Gemma-27B-v3-Q4_K_M.gguf
+     sha256: 4afbd426fa2b3b2927edff46a909868ade5656e3ca7c1df609c524b2b2cbe8c5
+     uri: huggingface://bartowski/TheDrummer_Big-Tiger-Gemma-27B-v3-GGUF/TheDrummer_Big-Tiger-Gemma-27B-v3-Q4_K_M.gguf
 
 - &wizard-vicuna-uncensored
   url: "github:Swarmind/gallery/models/vicuna.yaml@master"
   name: "wizard-vicuna-13b-uncensored"
   license: other
   icon: https://github.com/nlpxucan/WizardLM/raw/main/imgs/WizardLM.png
-  urls:
-    - https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GGUF
   tags:
     - llm
     - gguf
     - gpu
     - cpu
     - mistral
+  urls:
+    - https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GGUF
   overrides:
     parameters:
       model: Wizard-Vicuna-13B-Uncensored.Q5_K_M.gguf 
@@ -74,8 +75,6 @@
   name: "DeepSeek-R1-Distill-Qwen-14B"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
-  urls:
-    - https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
   tags:
     - llm
     - gguf
@@ -83,21 +82,22 @@
     - cpu
     - deepseek
     - qwen
+  urls:
+    - https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+    - https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF
   overrides:
     parameters:
-      model: DeepSeek-R1-Distill-Qwen-14B-Q5_K_M.gguf
+      model: DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
   files:
-    - filename: DeepSeek-R1-Distill-Qwen-14B-Q5_K_M.gguf
-      uri: huggingface://unsloth/DeepSeek-R1-Distill-Qwen-14B-GGUF/DeepSeek-R1-Distill-Qwen-14B-Q5_K_M.gguf
+    - filename: DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
+      sha256: 0b319bd0572f2730bfe11cc751defe82045fad5085b4e60591ac2cd2d9633181
+      uri: huggingface://bartowski/DeepSeek-R1-Distill-Qwen-14B-GGUF/DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
 
 - &DeepSeek-R1-Distill-Qwen-32B
   url: "github:Swarmind/gallery/models/deepseek.yaml@master"
   name: "DeepSeek-R1-Distill-Qwen-32B"
   license: other
   icon: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/figures/logo.svg?raw=true
-  urls:
-    - https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-    - https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF
   tags:
     - llm
     - gguf
@@ -105,26 +105,30 @@
     - cpu
     - deepseek
     - qwen
+  urls:
+    - https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+    - https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF
   overrides:
     parameters:
-      model: DeepSeek-R1-Distill-Qwen-32B-Q5_K_M.gguf
+      model: DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf
   files:
-    - filename: DeepSeek-R1-Distill-Qwen-32B-Q5_K_M.gguf
-      uri: huggingface://bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/DeepSeek-R1-Distill-Qwen-32B-Q5_K_M.gguf
+    - filename: DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf
+      sha256: bed9b0f551f5b95bf9da5888a48f0f87c37ad6b72519c4cbd775f54ac0b9fc62
+      uri: huggingface://bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF/DeepSeek-R1-Distill-Qwen-32B-Q4_K_M.gguf
 
 - &FLUX-1-dev
   url: "github:Swarmind/gallery/models/flux.1-dev.yaml@master"
   name: "FLUX.1-dev"
   license: other
   icon: https://www.toolpilot.ai/cdn/shop/files/fluxdev.jpg?v=1745132053
-  urls:
-    - https://huggingface.co/black-forest-labs/FLUX.1-dev
-    - https://huggingface.co/city96/FLUX.1-dev-gguf
   tags:
     - text2image
     - gguf
     - gpu
     - cpu
+  urls:
+    - https://huggingface.co/black-forest-labs/FLUX.1-dev
+    - https://huggingface.co/city96/FLUX.1-dev-gguf
   overrides:
     parameters:
       model: flux1-dev-Q8_0.gguf
@@ -138,14 +142,14 @@
   name: "stable-diffusion-3.5-large"
   license: other
   icon: https://huggingface.co/stabilityai/stable-diffusion-3.5-large/media/main/sd3.5_large_demo.png
-  urls:
-    - https://huggingface.co/stabilityai/stable-diffusion-3.5-large
-    - https://huggingface.co/calcuis/sd3.5-large-gguf
   tags:
     - text2image
     - gguf
     - gpu
     - cpu
+  urls:
+    - https://huggingface.co/stabilityai/stable-diffusion-3.5-large
+    - https://huggingface.co/calcuis/sd3.5-large-gguf
   overrides:
     parameters:
       model: sd3.5_large-q8_0.gguf
