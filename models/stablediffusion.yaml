@@ -1,6 +1,10 @@
-name: stablediffusion
-parameters:
-  model: stablediffusion_assets
-backend: diffusers
-f16: true # true to GPU acceleration
-cuda: true # true to GPU acceleration
+---
+name: "stable-diffusion"
+
+config_file: |
+  name: stablediffusion
+  parameters:
+    model: stablediffusion_assets
+  backend: diffusers
+  f16: true # true to GPU acceleration
+  cuda: true # true to GPU acceleration
