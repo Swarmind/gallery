@@ -122,7 +122,7 @@
   license: other
   icon: https://www.toolpilot.ai/cdn/shop/files/fluxdev.jpg?v=1745132053
   tags:
-    - text2image
+    - text-to-image
     - gguf
     - gpu
     - cpu
@@ -144,7 +144,7 @@
   license: other
   icon: https://huggingface.co/stabilityai/stable-diffusion-3.5-large/media/main/sd3.5_large_demo.png
   tags:
-    - text2image
+    - text-to-image
     - gguf
     - gpu
     - cpu
