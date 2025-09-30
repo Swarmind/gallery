@@ -1,12 +1,16 @@
-backend: diffusers
-cfg_scale: 1
-diffusers:
-  cuda: true
-  enable_parameters: num_inference_steps
-  pipeline_type: FluxPipeline
-f16: true
-low_vram: false
-name: flux.1-dev
-parameters:
-  model: ChuckMcSneed/FLUX.1-dev
-step: 25
+---
+name: "flux"
+
+config_file: |
+  backend: diffusers
+  cfg_scale: 1
+  diffusers:
+    cuda: true
+    enable_parameters: num_inference_steps
+    pipeline_type: FluxPipeline
+  f16: true
+  low_vram: false
+  name: flux.1-dev
+  parameters:
+    model: ChuckMcSneed/FLUX.1-dev
+  step: 25
