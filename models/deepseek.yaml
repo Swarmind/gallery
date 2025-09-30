@@ -1,22 +1,23 @@
-context_size: 16384
-f16: true
-mmap: true
-name: deepseek-r1-distill-qwen-14b
-parameters:
-  model: DeepSeek-R1-Distill-Qwen-14B-Q4_K_M.gguf
-stopwords:
-- <｜begin▁of▁sentence｜>
-- <｜end▁of▁sentence｜>
-- <｜User｜>
-- <｜Assistant｜>
-template:
-  chat: |
-    {{.Input -}}<｜Assistant｜>
-  chat_message: |
-    {{if eq .RoleName "system" -}}{{.Content }}
-    {{ end -}}
-    {{if eq .RoleName "user" -}}<｜User｜>{{.Content}}
-    {{end -}}
-    {{if eq .RoleName "assistant" -}}<｜Assistant｜>{{.Content}}<｜end▁of▁sentence｜>{{end}}
-  completion: |
-    {{.Input}}
+---
+name: "deepseek-r1"
+
+config_file: |
+  context_size: 16384
+  f16: true
+  mmap: true
+  stopwords:
+  - <｜begin▁of▁sentence｜>
+  - <｜end▁of▁sentence｜>
+  - <｜User｜>
+  - <｜Assistant｜>
+  template:
+    chat: |
+      {{.Input -}}<｜Assistant｜>
+    chat_message: |
+      {{if eq .RoleName "system" -}}{{.Content }}
+      {{ end -}}
+      {{if eq .RoleName "user" -}}<｜User｜>{{.Content}}
+      {{end -}}
+      {{if eq .RoleName "assistant" -}}<｜Assistant｜>{{.Content}}<｜end▁of▁sentence｜>{{end}}
+    completion: |
+      {{.Input}}
