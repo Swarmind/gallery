@@ -123,12 +123,11 @@
   icon: https://www.toolpilot.ai/cdn/shop/files/fluxdev.jpg?v=1745132053
   tags:
     - text-to-image
-    - gguf
+    - python
     - gpu
-    - cpu
+    - flux
   urls:
     - https://huggingface.co/black-forest-labs/FLUX.1-dev
-    - https://huggingface.co/city96/FLUX.1-dev-gguf
   overrides:
     parameters:
       model: ChuckMcSneed/FLUX.1-dev
