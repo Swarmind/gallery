@@ -8,7 +8,7 @@ license: "LLaMA"
 
 config_file: |
      backend: llama-cpp
-     context_size: 16384
+     context_size: 8192
      roles:
           user: "User: "
           system: "System: "
