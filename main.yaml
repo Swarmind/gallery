@@ -78,6 +78,27 @@
       sha256: d7aab1372891c3fefb9e6970adcfa06d7f8ee96e91c236751d77b7cdfc096be1
       uri: huggingface://TheBloke/Wizard-Vicuna-13B-Uncensored-GGUF/Wizard-Vicuna-13B-Uncensored.Q5_K_M.gguf
 
+- &wizardlm2
+  url: "github:Swarmind/gallery/models/wizardlm2.yaml@master"
+  name: "wizardlm2-7b"
+  icon: https://github.com/nlpxucan/WizardLM/raw/main/imgs/WizardLM.png
+  license: apache-2.0
+  urls:
+    - https://huggingface.co/MaziyarPanahi/WizardLM-2-7B-GGUF
+  tags:
+    - llm
+    - gguf
+    - gpu
+    - cpu
+    - mistral
+  overrides:
+    parameters:
+      model: WizardLM-2-7B.Q4_K_M.gguf
+  files:
+    - filename: WizardLM-2-7B.Q4_K_M.gguf
+      sha256: 613212417701a26fd43f565c5c424a2284d65b1fddb872b53a99ef8add796f64
+      uri: huggingface://MaziyarPanahi/WizardLM-2-7B-GGUF/WizardLM-2-7B.Q4_K_M.gguf
+
 - &DeepSeek-R1-Distill-Qwen-14B
   url: "github:Swarmind/gallery/models/deepseek.yaml@master"
   name: "deepseek-r1-distill-qwen-14b"
