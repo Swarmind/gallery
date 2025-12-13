@@ -7,6 +7,7 @@ description: |
 license: "LLaMA"
 
 config_file: |
+     backend: llama-cpp
      context_size: 16384
      roles:
           user: "User: "
