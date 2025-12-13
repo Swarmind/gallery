@@ -12,12 +12,6 @@
   urls:
     - https://huggingface.co/TheDrummer/Tiger-Gemma-9B-v1
     - https://huggingface.co/mradermacher/Tiger-Gemma-9B-v1-i1-GGUF
-  description: |
-    Tiger Gemma 9B v1
-
-    Decensored Gemma 9B. No refusals so far. No apparent brain damage.
-
-    In memory of Tiger
   overrides:
     parameters:
       model: Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
@@ -25,6 +19,21 @@
     - filename: Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
       sha256: ef10accfee8023b31def5425bf591bf1f0203090f3dd851cd3f37bb235324383
       uri: huggingface://mradermacher/Tiger-Gemma-9B-v1-i1-GGUF/Tiger-Gemma-9B-v1.i1-Q4_K_M.gguf
+
+- &medium-tiger-gemma
+  url: "github:Swarmind/gallery/models/gemma.yaml@master"
+  name: "medium-tiger-gemma-12b-v3"
+  icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/Wah-kBvM_ya6x08q7fc6q.png
+  urls:
+    - https://huggingface.co/TheDrummer/Tiger-Gemma-12B-v3
+    - https://huggingface.co/bartowski/TheDrummer_Tiger-Gemma-12B-v3-GGUF
+  overrides:
+    parameters:
+      model: TheDrummer_Tiger-Gemma-12B-v3-Q4_K_M.gguf
+  files:
+    - filename: TheDrummer_Tiger-Gemma-12B-v3-Q4_K_M.gguf
+      sha256: b1756e46d7fce1718cf70cb74028ada567bac388503e93fc23af0baea5b5cd9f
+      uri: huggingface://bartowski/TheDrummer_Tiger-Gemma-12B-v3-GGUF/TheDrummer_Tiger-Gemma-12B-v3-Q4_K_M.gguf
 
 - &big-tiger-gemma
   url: "github:Swarmind/gallery/models/gemma.yaml@master"
@@ -68,7 +77,6 @@
     - filename: Wizard-Vicuna-13B-Uncensored.Q5_K_M.gguf 
       sha256: d7aab1372891c3fefb9e6970adcfa06d7f8ee96e91c236751d77b7cdfc096be1
       uri: huggingface://TheBloke/Wizard-Vicuna-13B-Uncensored-GGUF/Wizard-Vicuna-13B-Uncensored.Q5_K_M.gguf
-
 
 - &DeepSeek-R1-Distill-Qwen-14B
   url: "github:Swarmind/gallery/models/deepseek.yaml@master"
@@ -133,25 +141,64 @@
       model: ChuckMcSneed/FLUX.1-dev
 
 - &stable-diffusion-3-5-large
-  url: "github:Swarmind/gallery/models/stablediffusion.yaml@master"
+  license: stabilityai-ai-community
+  url: "github:Swarmind/gallery/models/stablediffusion-ggml.yaml@master"
   name: "stable-diffusion-3.5-large"
-  license: other
-  icon: https://huggingface.co/stabilityai/stable-diffusion-3.5-large/media/main/sd3.5_large_demo.png
-  tags:
-    - text-to-image
-    - gguf
-    - gpu
-    - cpu
   urls:
     - https://huggingface.co/stabilityai/stable-diffusion-3.5-large
-    - https://huggingface.co/calcuis/sd3.5-large-gguf
+    - https://huggingface.co/second-state/stable-diffusion-3.5-large-GGUF
+  tags:
+    - text-to-image
+    - stablediffusion
+    - gpu
+    - cpu
+  icon: https://avatars.githubusercontent.com/u/100950301
   overrides:
     parameters:
-      model: sd3.5_large-q8_0.gguf
+      model: sd3.5_large-Q4_0.gguf
   files:
-    - filename: sd3.5_large-q8_0.gguf
-      sha256: 11d24423a82716c7c677a6fa4315045b9b95aa37d5c75ee3bb75c25cd0c7fb7f
-      uri: huggingface://calcuis/sd3.5-large-gguf/sd3.5_large-q8_0.gguf
+    - filename: "sd3.5_large-Q4_0.gguf"
+      sha256: "c79ed6cdaa7decaca6b05ccc636b956b37c47de9b104c56315ca8ed086347b00"
+      uri: "huggingface://second-state/stable-diffusion-3.5-large-GGUF/sd3.5_large-Q4_0.gguf"
+    - filename: clip_g.safetensors
+      sha256: ec310df2af79c318e24d20511b601a591ca8cd4f1fce1d8dff822a356bcdb1f4
+      uri: huggingface://second-state/stable-diffusion-3.5-large-GGUF/clip_g.safetensors
+    - filename: clip_l.safetensors
+      sha256: 660c6f5b1abae9dc498ac2d21e1347d2abdb0cf6c0c0c8576cd796491d9a6cdd
+      uri: huggingface://second-state/stable-diffusion-3.5-large-GGUF/clip_l.safetensors
+    - filename: t5xxl-Q5_0.gguf
+      sha256: f4df16c641a05c4a6ca717068ba3ee312875000f6fac0efbd152915553b5fc3e
+      uri: huggingface://second-state/stable-diffusion-3.5-large-GGUF/t5xxl-Q5_0.gguf
 
+- &dreamshaper
+  icon: https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/dd9b038c-bd15-43ab-86ab-66e145ad7ff2/width=450/26072158-132340247-8k%20portrait%20of%20beautiful%20cyborg%20with%20brown%20hair,%20intricate,%20elegant,%20highly%20detailed,%20majestic,%20digital%20photography,%20art%20by%20artg_ed.jpeg
+  name: "dreamshaper"
+  license: other
+  urls:
+    - https://civitai.com/models/4384/dreamshaper
+  tags:
+    - text-to-image
+    - stablediffusion
+    - python
+    - sd-1.5
+    - gpu
+  url: "github:Swarmind/gallery/models/dreamshaper.yaml@master"
+  overrides:
+    parameters:
+      model: DreamShaper_8_pruned.safetensors
+  files:
+    - filename: DreamShaper_8_pruned.safetensors
+      uri: huggingface://Lykon/DreamShaper/DreamShaper_8_pruned.safetensors
+      sha256: 879db523c30d3b9017143d56705015e15a2cb5628762c11d086fed9538abd7fd
 
-
+- &qwenimage
+  name: "qwen-image"
+  url: "github:Swarmind/gallery/models/qwen-image.yaml@master"
+  urls:
+    - https://huggingface.co/Qwen/Qwen-Image
+  icon: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/qwen_image_logo.png
+  license: apache-2.0
+  tags:
+    - qwen-image
+    - gpu
+    - text-to-image
