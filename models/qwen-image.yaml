@@ -8,8 +8,8 @@ config_file: |
       cuda: true
       enable_parameters: num_inference_steps
       pipeline_type: DiffusionPipeline
-    f16: true
-    low_vram: true
+    f16: false
+    low_vram: false
     name: qwen-image
     parameters:
       model: Qwen/Qwen-Image
