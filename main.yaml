@@ -22,7 +22,7 @@
 
 - &medium-tiger-gemma
   url: "github:Swarmind/gallery/models/gemma.yaml@master"
-  name: "medium-tiger-gemma-12b-v3"
+  name: "thedrummer_tiger-gemma-12b-v3"
   icon: https://cdn-uploads.huggingface.co/production/uploads/65f2fd1c25b848bd061b5c2e/Wah-kBvM_ya6x08q7fc6q.png
   urls:
     - https://huggingface.co/TheDrummer/Tiger-Gemma-12B-v3
