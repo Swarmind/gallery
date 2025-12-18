@@ -17,7 +17,7 @@
   files:
     - filename: Huihui-gpt-oss-20b-BF16-abliterated-v2-Q4_K_M.gguf
       sha256: ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564
-      uri: huggingface://huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated-v2/Huihui-gpt-oss-20b-BF16-abliterated-v2-Q4_K_M.gguf
+      uri: https://huggingface.co/huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated-v2/resolve/main/GGUF/Huihui-gpt-oss-20b-BF16-abliterated-v2-Q4_K_M.gguf
 
 - &tiger-gemma
   url: "github:Swarmind/gallery/models/gemma.yaml@master"
