@@ -1,7 +1,7 @@
 ---
 - &gptoss
   url: "github:Swarmind/gallery/models/harmony.yaml@master"
-  name: "gpt-oss-20b"
+  name: "Huihui-gpt-oss-20b-BF16-abliterated-v2"
   icon: https://raw.githubusercontent.com/openai/gpt-oss/main/docs/gpt-oss-120b.svg
   tags:
     - gguf
